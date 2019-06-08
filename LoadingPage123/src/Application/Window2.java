@@ -28,26 +28,31 @@ public class Window2 extends Application{
         
         
         Button button1 = new Button("    breakfast");
-        button1.setLayoutX(0);
-        button1.setLayoutY(10);
-        Button button2 = new Button("       lauch");
-        button2.setLayoutX(0);
-        button2.setLayoutY(40);
+        button1.setLayoutX(50);
+        button1.setLayoutY(140);
+        Button button2 = new Button("       lunch");
+        button2.setLayoutX(150);
+        button2.setLayoutY(140);
         Button button3 = new Button("       dinner");
-        button3.setLayoutX(0);
-        button3.setLayoutY(70);
-        
-     //   Text text1 = new Text(10,20,"breakfast");
-     //   Text text2 = new Text(10,40,"This is a text sample");
-    //  Text text3 = new Text(10,60,"This is a text sample");
-        
+        button3.setLayoutX(250);
+        button3.setLayoutY(140);
+        button1.setOnAction((ActionEvent event) -> {
+            Window3 open = new Window3();
+            open.start(new Stage());          
+        });  //click event, open window 2
+        button2.setOnAction((ActionEvent event) -> {
+            Window3 open = new Window3();
+            open.start(new Stage());          
+        });  //click event, open window 2
+        button3.setOnAction((ActionEvent event) -> {
+            Window3 open = new Window3();
+            open.start(new Stage());          
+        });  //click event, open window 2
         Pane root = new Pane();
         root.getChildren().add(button1);
         root.getChildren().add(button2);
         root.getChildren().add(button3);
-     //   root.getChildren().add(text1);
-     //   root.getChildren().add(text2);
-      //  root.getChildren().add(text3);
+     
                
         Scene scene = new Scene(root,400,400);
         primaryStage.setTitle("Vandenberg");

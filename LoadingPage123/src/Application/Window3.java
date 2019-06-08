@@ -19,7 +19,7 @@ public class Window3 extends Application{
     public void start(Stage primaryStage){
         StackPane root = new StackPane();
         Scene scene = new Scene(root,400,400);
-        primaryStage.setTitle("Hillcrest Dining Hall");
+        primaryStage.setTitle("Vanderberg");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
