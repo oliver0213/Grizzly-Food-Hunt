@@ -22,7 +22,7 @@ public class DBConnect {
     private static Connection conn;
     private static String url = "jdbc:mysql://localhost:3306/menu";
     private static String user = "root";
-    private static String pass = "1997213";
+    private static String pass = "123456";
  
     public static Connection connect() throws SQLException{
         try{

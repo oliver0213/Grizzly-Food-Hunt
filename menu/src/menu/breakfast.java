@@ -48,7 +48,7 @@ public class breakfast extends Menu {
           try{
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from menu";
+            String SQL = "SELECT * from breakfast";
             //ResultSet
               ResultSet rs = c.createStatement().executeQuery(SQL);
 

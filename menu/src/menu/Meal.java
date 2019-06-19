@@ -48,25 +48,31 @@ public class Meal extends Menu{
         Button button4 = new Button();
         Button button5 = new Button();
         Button button6 = new Button();
-        button.setLayoutX(15);
-        button.setLayoutY(50);
+        button.setLayoutX(150);
+        button.setLayoutY(170);
         button.setText("Breakfast");
-        button2.setLayoutX(15);
-        button2.setLayoutY(90);
+       // button.setStyle("-fx-font: 20 arial;");
+        button.setStyle("-fx-background-color: gold;-fx-font: 20 arial;");
+        button2.setLayoutX(150);
+        button2.setLayoutY(220);
         button2.setText("Lunch");
-        button3.setLayoutX(15);
-        button3.setLayoutY(130);
+        button2.setStyle("-fx-font: 20 arial;-fx-background-color: gold;");
+        button3.setLayoutX(150);
+        button3.setLayoutY(270);
         button3.setText("Dinner");
-        button4.setLayoutX(105);
-        button4.setLayoutY(50);
+        button3.setStyle("-fx-font: 20 arial;-fx-background-color: gold;");
+        button4.setLayoutX(300);
+        button4.setLayoutY(170);
         button4.setText("Breakfast for Vegetarian");
-        button5.setLayoutX(105);
-        button5.setLayoutY(90);
+        button4.setStyle("-fx-font: 20 arial;-fx-background-color: gold;");
+        button5.setLayoutX(300);
+        button5.setLayoutY(220);
         button5.setText("Lunch for Vegetarian");
-        button6.setLayoutX(105);
-        button6.setLayoutY(130);
+        button5.setStyle("-fx-font: 20 arial;-fx-background-color: gold;");
+        button6.setLayoutX(300);
+        button6.setLayoutY(270);
         button6.setText("Dinner for Vegetarian");
-        
+        button6.setStyle("-fx-font: 20 arial;-fx-background-color: gold;");
        
       
         button.setOnAction((ActionEvent event) -> {
@@ -93,16 +99,16 @@ public class Meal extends Menu{
               dinnerV open = new dinnerV();
               open.start(new Stage());
         });
-        String image = Meal.class.getResource("background.jpg").toExternalForm();
+        String image = Meal.class.getResource("download.png").toExternalForm();
         root.setStyle("-fx-background-image: url('" + image + "'); " );
-
+        //root.setStyle("-fx-background-size:300 300");
         root.getChildren().add(button);
         root.getChildren().add(button2);
         root.getChildren().add(button3);
         root.getChildren().add(button4);
         root.getChildren().add(button5);
         root.getChildren().add(button6);
-        Scene scene = new Scene(root,600,500);
+        Scene scene = new Scene(root,650,450);
         primaryStage.setTitle("Vandenberg");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);

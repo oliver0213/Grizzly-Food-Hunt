@@ -46,7 +46,7 @@ public class lunchV extends Menu{
           try{
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from menu2";
+            String SQL = "SELECT * from lunchV";
             //ResultSet
               ResultSet rs = c.createStatement().executeQuery(SQL);
 
